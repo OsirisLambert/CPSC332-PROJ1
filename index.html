@@ -1,0 +1,66 @@
+<!doctype html>
+
+<html lang="en-US">
+
+<head>
+
+<meta charset="utf-8">
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>CPSC332 Project 1</title>
+
+<link href="project.css" rel="stylesheet" type="text/css">
+
+
+
+
+</head>
+
+<body>
+
+<!-- Main Container -->
+
+
+  <section class="input" id="input">
+
+	<p class="input_header1">Professors:</p>
+
+
+<!-- SSN PART -->
+	<form action="ssn.php" method="post">
+		<p class="input_text">SSN: &emsp;&emsp; &emsp;&emsp; &nbsp;&nbsp;&nbsp;  <input type="text" name = "SSN" placeholder="Please input 9 dig SSN" required></p>
+		<input type="submit" value="submit"><br/>
+	</form>		
+	
+<!-- STUDENT_GRADE_COUNT PART -->
+	<form action="student_grade_count.php" method="post">
+		<p class="input_text">Course Number:&nbsp;&nbsp;  <input type="text" name = "CNO" placeholder="Please input Courses #" required></p>
+		<p class="input_text">Section Number: &nbsp;<input type="text" name = "SNO" placeholder="Please input Section #" required></p>
+		<input type="submit" value="submit"><br/>
+	</form>
+
+
+
+  <p class="input_header2">Students:</p>
+
+<!-- COURSE LIST -->
+	<form action="course_list.php" method="post">
+		<p class="input_text">Course Number:&nbsp;&nbsp;  <input type="text" name = "CNO" placeholder="Please input Courses #" required></p>
+		<input type="submit" value="submit"><br/>
+	</form>
+	
+<!-- TRANSCRIPT -->
+	<form action="transcript.php" method="post">
+		<p class="input_text">CWID:&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp; &nbsp;&nbsp;<input type="text" name = "CWID" placeholder="Please input Section #" required></p>
+		<input type="submit" value="submit"><br/>
+	</form>	
+
+
+<!-- Main Container Ends -->
+
+</body>
+
+</html>
