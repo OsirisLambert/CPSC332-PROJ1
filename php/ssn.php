@@ -1,6 +1,18 @@
-<?php
-
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>CPSC332 - Project 1 Professors</title>
+	<link href="style.css" rel="stylesheet" type="text/css">
+	</head>
 	
+<body class="bg">
+	<div class="container">
+	
+		
+<?php	
 $SSN = $_POST['SSN'];
 $dbServername = "mariadb";
 $dbUsername = "cs332z7";
@@ -37,3 +49,6 @@ if ($result->num_rows > 0) {
 }
 $con->close();
 ?>
+		</div>
+	</body>
+</html>
