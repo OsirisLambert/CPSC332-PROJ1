@@ -2,10 +2,10 @@
 
 	
 $SSN = $_POST['SSN'];
-$dbServername = "localhost";
-$dbUsername = "cpsc332";
-$dbPassword = "cpsc332";
-$dbName = "liu";
+$dbServername = "mariadb";
+$dbUsername = "cs332z7";
+$dbPassword = "rih9eiHe";
+$dbName = "cs332z7";
 
 // set connection
 $con= new mysqli($dbServername,$dbUsername,$dbPassword, $dbName);
