@@ -33,7 +33,7 @@ $result = $con->query($sql);
 ?>
 <body>
 	<div class="container">
-	  <header> <a href="">
+	  <header> <a href="http://ecs.fullerton.edu/~cs332z7">
     <h4 class="logo">Home</h4>
 	  </a>
   </header>
