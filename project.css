@@ -18,6 +18,13 @@ body {
     height: 720px;
     background-color: #FFFFFF;
 }
+.container2{
+  border-radius: 9px;
+  background: white;
+  padding: 5vh;
+  color: black;
+  margin: 20vh;
+}
 /* Navigation */
 header {
 	width: 100%;
