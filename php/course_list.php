@@ -27,7 +27,8 @@ die("Could not connect: " . $con->connect_error);
 <?php
 $sql = "SELECT *, COUNT(*)
 		FROM  ENROLLMENT E, SECTION S
-		WHERE S.CNO = $CNO AND S.CNO = E.CNO AND S.SNO = E.SNO ";
+		WHERE S.CNO = $CNO AND S.CNO = E.CNO AND S.SNO = E.SNO
+		GROUP BY S.SNO";
 $result = $con->query($sql);
 ?>
 
@@ -39,7 +40,7 @@ $result = $con->query($sql);
   </header>
 	<section class="title" id="title">
     <h2 class="title_header">Result<font color="#717070">Output</font></h2>
-    <p class="tagline">professors</p>
+    <p class="tagline">students</p>
   </section>
 	<section class="input" id="input">
 	  
@@ -51,7 +52,7 @@ if ($result->num_rows > 0) {?>
 		<table class="table">
 	<thead>
       <tr> 
-          <th scope="col">SNO </th> 
+          <th scope="col">Section ID </th> 
           <th scope="col">Classroom </th> 
 	  <th scope="col">Meeting_date </th> 
           <th scope="col">Time</th>

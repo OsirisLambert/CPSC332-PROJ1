@@ -43,7 +43,7 @@ $result = $con->query($sql);
   </header>
 	<section class="title" id="title">
     <h2 class="title_header">Result<font color="#717070">Output</font></h2>
-    <p class="tagline">professors</p>
+    <p class="tagline">students</p>
   </section>
 	<section class="input" id="input">
 	  
@@ -58,8 +58,8 @@ if ($result->num_rows > 0) {
 	<table class="table"> 
 	<thead>	
       <tr> 
-				<th scope="col">CNO</th>
-          <th scope="col">Title </th> 
+				<th scope="col">Course ID</th>
+          <th scope="col">Course Title </th> 
           <th scope="col">Grade </th> 
       </tr>
 	</thead>
@@ -69,8 +69,8 @@ if ($result->num_rows > 0) {
 		
 		<tr>
 				<td><?php echo  $row["CNO"] ; ?></td>
-			 <td> <?php echo  $row["Title"] ;?></td>
-			 <td><?php echo $row["Grade"] ;?></td>
+			 <td> <?php echo  $row["CTITLE"] ;?></td>
+			 <td><?php echo $row["GRADE"] ;?></td>
 			 </tr>
 
 		<?php } ?>

@@ -55,7 +55,7 @@ if ($result->num_rows > 0) {?>
 		<table class="table"> 
 	<thead>	
       <tr> 
-          <th scope="col">Title </th> 
+          <th scope="col">Course Title </th> 
           <th scope="col">Classroom </th> 
 	  <th scope="col">Meeting_date </th> 
           <th scope="col">Time</th>

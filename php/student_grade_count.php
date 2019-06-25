@@ -52,12 +52,10 @@ $result = $con->query($sql);
 	
 	
 <?php 	
-if ($result->num_rows > 0) { ?>
-
-<?php 
+if ($result->num_rows > 0) { 
 	echo "Course #: " . $CNO ."<br>" 
 		."Section #: " . $SNO . "<br>";
-	?>
+?>
 	<table class="table"> 
 	<thead>	
       <tr> 
@@ -69,7 +67,7 @@ if ($result->num_rows > 0) { ?>
 		
 <?php while($row = $result->fetch_assoc()) { ?>
 		<tr>
-				<td><?php echo  $row["Grade"] ; ?></td>
+				<td><?php echo  $row["GRADE"] ; ?></td>
 			 <td> <?php echo  $row["COUNT(*)"] ;?></td>
 			 </tr>	
     <?php } ?>
