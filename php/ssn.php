@@ -49,20 +49,20 @@ $result = $con->query($sql);
 		
 <?php
 if ($result->num_rows > 0) {
-	echo '<table calss=\"table\">'; // start a table tag in the HTML
+	echo "<table calss=\"table\">"; // start a table tag in the HTML
 
-	echo '<thead>
+	echo "<thead>
 	<tr><th scope=\"col\">CTITLE</th>	<th scope=\"col\">CLASSROOM</th>	
 			  <th scope=\"col\">MEETING_DAYS</th>	<th scope=\"col\">TIME</th></tr>
-		</thead>';
+		</thead>";
 	 while($row = $result->fetch_assoc()) {
-        echo '<tbody>
+        echo "<tbody>
 		<tr><td>" . $row["CTITLE"] . "</td>" 
 			."<td>" . $row["CLASSROOM"] . "</td>"
 			."<td>" . $row["MEETING_DAYS"] . "</td>"
 			."<td>" . $row["BEGINNING_TIME"] 
 			. ' - '. $row["ENDING_TIME"] .  "</td></tr>
-			</tbody>';	
+			</tbody>";	
     }
 	echo "</table>"; //Close the table in HTML  
 } else {
