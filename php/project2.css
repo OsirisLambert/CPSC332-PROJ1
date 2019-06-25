@@ -19,11 +19,17 @@ body {
     background-color: #FFFFFF;
 }
 .container2{
-  border-radius: 9px;
-  background: white;
-  padding: 5vh;
-  color: black;
-  margin: 20vh;
+    border-radius: 9px;
+    background: white;
+    padding-top: 5vh;
+    padding-right: 5vh;
+    padding-left: 5vh;
+    padding-bottom: 5vh;
+    color: black;
+    margin-top: -20vh;
+    margin-right: 7vh;
+    margin-left: 7vh;
+    margin-bottom: 3vh;
 }
 /* Navigation */
 header {
