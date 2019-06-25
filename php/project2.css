@@ -295,16 +295,6 @@ footer {
 .hidden {
 	display: none;
 }
-h1,
-h6 {
-	font-family: 'Open Sans';
-	font-weight: 300;
-	text-align: center;
-	position: absolute;
-	top: 45%;
-	right: 0;
-	left: 0;
-}
 @-webkit-keyframes Gradient {
 	0% {
 		background-position: 0% 50%
