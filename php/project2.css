@@ -96,14 +96,6 @@ ul li:hover a {
     margin-left: 0px;
     letter-spacing: 4px;
 }
-.input_data1{
-    text-align: center;
-    margin-top: 38px;
-}
-.input_data2{
-    text-align: center;
-    margin-top: 29px;
-}
 
 /* title Section */
 .title {
@@ -302,6 +294,51 @@ footer {
 }
 .hidden {
 	display: none;
+}
+h1,
+h6 {
+	font-family: 'Open Sans';
+	font-weight: 300;
+	text-align: center;
+	position: absolute;
+	top: 45%;
+	right: 0;
+	left: 0;
+}
+@-webkit-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@-moz-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
 }
 
 /* Mobile */
