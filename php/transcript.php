@@ -58,6 +58,7 @@ if ($result->num_rows > 0) {
 	<table class="table"> 
 	<thead>	
       <tr> 
+				<th scope="col">CNO</th>
           <th scope="col">Title </th> 
           <th scope="col">Grade </th> 
       </tr>
@@ -66,9 +67,6 @@ if ($result->num_rows > 0) {
 		
 <?php	while($row = $result->fetch_assoc()) { ?>
 		
-        echo "<tr><td>" . $row["CNO"] . "</td>" 
-			."<td>" . $row["CTITLE"] . "</td>"
-			."<td>" . $row["GRADE"] . "</td></tr>";	
 		<tr>
 				<td><?php echo  $row["CNO"] ; ?></td>
 			 <td> <?php echo  $row["Title"] ;?></td>
